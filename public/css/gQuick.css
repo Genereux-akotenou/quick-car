@@ -1,0 +1,522 @@
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+GENERAL SETTINGS
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+input, select{
+    outline: none !important;
+}
+input, select{
+    /* padding: 0.7em 1em !important; */
+}
+button{
+    cursor: pointer;
+    outline: none !important;
+}
+html{
+    color: #231f20;
+    scroll-behavior: smooth;
+    /* font-size: 13px; */
+    /* line-height: 1.7;
+    letter-spacing: .5px;
+    overflow-x: hidden; */
+}
+
+body{
+    margin: 0;
+}
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+GENERAL SETTINGS
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.navItem{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header{
+
+}
+.header-row-1{
+    height:88px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.navBar ul{
+    display: flex;
+    flex-direction: row;
+}
+.navBar ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.8em;
+}
+.navBar ul li a{
+    height: 100% !important;
+    text-decoration: none !important;
+    color: black;
+}
+.navBar ul li a i{
+    padding: 4px 14px;
+    background-color: #f6f6f6;
+    height: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 1.05em;
+    font-weight: lighter !important;
+    color: rgb(46, 46, 46);
+    transition: all .3s ease-in;
+}
+.navBar ul li a i:hover{
+    background-color: #e1e1e1;
+}
+
+.search-field{
+    padding: 0.5em 1em !important;
+    position: relative;
+    bottom: 0.2em;
+}
+#search-form .link1 {
+    position: relative;
+    top: -1px !important;
+}
+.link1 b {
+    padding: 5px 9px 6px 9px;
+}
+.field input{
+    /* padding: 0.5em !important; */
+    /* height: auto !important; */
+    /* margin: 0.5em 0.5em 0.5em 0em; */
+}
+.ct_field input{
+    padding: 0.5em !important;
+    margin: 0.5em 0.5em 0.5em 0em;
+}
+.ct_field textarea{
+    /* padding: 0.5em !important; */
+    margin-top: 0.5em;
+}
+.searchBox{
+    background-color: red;
+    display: flex;
+}
+.searchBox input{
+    /* width: 100%; */
+    padding: 0.5em 1em;
+}
+.zebbraFilter{
+    display: flex;
+    justify-content: space-between;
+}
+#header .extra{
+    z-index: 0 !important;
+}
+.vcarBaner{
+    position: relative;
+}
+.zebbraFilter div input{
+    padding: 0.7em 1.1em;
+    width: 14em;
+    z-index: 1000 !important;
+    border: 1px solid #1a71cb;
+    border-right: 30px solid #1a71cb;
+}
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+CAR STYLE
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.carList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.one_carList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.carProduct{
+    display: inline-flex;
+    background-color: #e9e9e9;
+    transition: all .3s ease-in;
+    height: 13em !important;
+    margin: 0.3em 0.3em 1em 0.3em;
+}
+.carProduct:hover{
+    background-color: rgb(226, 226, 226);
+}
+.carImage{
+    width: 19em !important;
+    overflow: hidden;
+    overflow: hidden;
+    /* margin-right: 0.7em; */
+}
+.carImage img{
+    width: 100%;
+    height: 100%;
+}
+.carData{
+    /* background-color: red; */
+    padding: 0.5em 1em 0.5em 1em;
+    width: 17em !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-right: 3px solid #ddd;
+    overflow: hidden;
+}
+.carAction a button{
+    padding: 0.6em 2em;
+    background: linear-gradient(to bottom, #409ddf 50%, #1c76ce 50%);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all .5s ease-in;
+    color: white;
+}
+.adminAction a button{
+    padding: 0.6em 1em;
+}
+.carAction a button:hover{
+    background: linear-gradient(to bottom, #409ddf 50%, #409ddf 50%);
+}
+.carData div:first-of-type{
+    margin-top: 1em;
+}
+.carData div:last-of-type{
+    margin-bottom: 1em;
+}
+.carData div p span:first-of-type{
+    font-size: 1.6em;
+    position:relative;
+    top: 0.1em;
+    color: #409ddf;
+    font-weight: bold;
+}
+.carData div p span:last-of-type{
+    font-size: 1.2em;
+    position:relative;
+    top: 0.1em;
+    color: red;
+    font-weight: bold;
+}
+.linkAriane a{
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bold;
+    /* color: #409ddf; */
+}
+.currentLink{
+    color: #135ba3;
+}
+.carDetails{
+    margin-top: 1rem;
+    min-height: 10em;
+    padding: 0.7em;
+    border-bottom: 2px solid #ddd;
+}
+.carDetails h4{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.carBigImg{
+    margin-top: 1rem;
+    min-height: 80vh;
+}
+.carBigImg img{
+    min-height: 100%;
+    min-width: 100%;
+}
+.availabilityBox{
+    width:36em;
+    height: 13em;
+    background-color: #1c76ce;
+
+    display: inline-flex;
+    flex-direction: column;
+    transition: all .3s ease-in;
+    margin: 0.3em 0.3em 1em 0.3em;
+    justify-content: space-around;
+}
+.availabilityDate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.availabilityDate div{
+    display: flex;
+    flex-direction: column;
+    margin: 0.7em;
+}
+.availabilityAction{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.availabilityDate div input{
+    padding: 0.5em;
+    margin: 0.5em;
+}
+.availabilityDate div label{
+    margin: 0.5em;
+    margin-bottom: 0;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+.availabilityAction .carAction{
+    position: relative;
+    bottom: 0.7em;
+}
+.resserve a button{
+    background: linear-gradient(to bottom, #55c017 50%, #49af0d 50%);
+}
+.nonDispo a button{
+    background: linear-gradient(to bottom, #b31616 50%, #a30c0c 50%);
+}
+.resserve a button:hover{
+    background: linear-gradient(to bottom, #55c017 50%, #55c017 50%);
+}
+.nonDispo a button:hover{
+    background: linear-gradient(to bottom, #b31616 50%, #b31616 50%);
+}
+table{
+    /* border: 1px solid #ddd; */
+    width: 100%;
+    border-collapse: collapse;
+
+}
+td{
+    border: 1px solid #ddd;
+    padding: 0.7em;
+}
+.td_head{
+    width: 100%;
+}
+
+.validationDetails{
+    margin-top: 1rem;
+    min-height: 10em;
+    padding: 0.7em;
+}
+.validationDetails h4{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.adminListe table{
+    /* width: 100%; */
+    border-left:  2px solid #ddd;
+    border-right: 2px solid #ddd;
+}
+
+.admBox1, .admBox2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.admBox1{
+    width: 100% !important;
+}
+tr{
+    display: flex;
+}
+.adminPrix{
+    width: 7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.adminActAction{
+    display: flex;
+    justify-content: space-between;
+}
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+FORMULAIRE STYLE
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.gLineField{
+    margin-bottom: 0.3em;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.7em;
+    margin-bottom: 1.5em;
+    position: relative;
+}
+.gLineField label{
+    font-size: 0.8em;
+    position: relative;
+    /* color: white; */
+}
+.gLineField input{
+    display: block;
+    border: 1px solid #ddd;
+    padding: 1em 1em;
+    font-size: 0.95em;
+    color: rgb(43, 43, 43);
+}
+.gLineField  textarea{
+    display: block;
+    border: 1px solid #ddd;
+    padding: 0.7em 1em;
+    font-size: 0.8em;
+    color: rgb(43, 43, 43);
+}
+input:focus, textarea:focus{
+    border: 1px solid rgb(39, 59, 57);
+    outline: none !important;
+}
+.remb{
+    width: 100%;
+    justify-content: space-between;
+    height: 2em;
+    z-index: 100;
+}
+.login{
+    border: none !important;
+    padding: 0.7em 0.8em !important;
+    width: 9em !important;
+    color: white !important;
+    border-radius: 4px;
+    font-size: 0.8em;
+    position: relative;
+    bottom: 0.4em;
+    cursor: pointer;
+    background-color: #065455 !important;
+}
+.gBack-green{
+    background-color: rgba(70, 223, 70, 0.884) !important;
+}
+.fail-login{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    font-size: 01em;
+    margin-bottom: 0;
+    margin-top: 0;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    min-width: 10em;
+    margin: auto;
+    transition: all .5s ease-in;
+    position: absolute;
+    top: -4em;
+    left: 0em;
+    right:0em;
+    height: 3em;
+    align-items: center;
+}
+.gAlert{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    font-size: 0.85em;
+    margin-bottom: 0;
+    margin-top: 0;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    min-width: 10em;
+    margin: auto;
+    transition: all .5s ease-in;
+    position: absolute;
+    left: 1.4em;
+    right: 1.4em;
+    height: 3.5em;
+    width: 68%;
+    position: fixed;
+    bottom: 1em !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    opacity: 0;
+}
+
+#hideMe {
+    -moz-animation: hideAnimation 0s ease-in 4s forwards;
+    /* Firefox */
+    -webkit-animation: hideAnimation 0s ease-in 4s forwards;
+    /* Safari and Chrome */
+    -o-animation: hideAnimation 0s ease-in 4s forwards;
+    /* Opera */
+    animation: hideAnimation 0s ease-in 4s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes hideAnimation {
+    to {
+        visibility: hidden;
+        width:0;
+        height:0;
+    }
+}
+@-webkit-keyframes hideAnimation {
+    to {
+        visibility:hidden;
+        width:0;
+        height:0;
+    }
+}
+
+.error-form{
+    color: rgb(255, 0, 0);
+    font-size: 1em;
+    margin-bottom: 0;
+    margin-top: 0;
+    position: absolute;
+    bottom: -1.6em;
+    font-weight: bold;
+}
+.box33{
+    min-height: 15em !important;
+}
+.lineRow label{
+    font-size: 1.1em;
+    width: 25em !important;
+    color: white;
+    margin-bottom: 0.4em;
+    margin-top: 0.7em;
+}
+/* .lineRow{
+    flex-direction: row !important;
+    justify-content: space-between;
+}
+.lineRow input{
+    width: 25em;
+}
+
+.login-form2{
+    width: 70%;
+    background-color: red !important;
+} */
+.oauth li a{
+    color: white;
+}
+.validateCart table tr td{
+    width: 100% !important;
+}
+.inner h4{
+    margin-top: 0.2em;
+}
+.adminGate a{
+    /* padding: 0.5em !important; */
+    padding: 14px 0 14px 0 !important;
+    background: linear-gradient(to bottom, #b31616 50%, #a30c0c 50%) !important;
+}
+#header .row-2 ul li a span {
+
+}
+.adminGate span{
+    height: 22px !important;
+}
