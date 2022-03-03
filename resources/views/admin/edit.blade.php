@@ -14,7 +14,7 @@
 
 @section('content')
 
-@if($toUpadate) != null)
+@if($toUpadate != null)
 <div class="box">
     <div class="border-bot">
         <div class="right-bot-corner">

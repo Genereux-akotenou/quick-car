@@ -22,7 +22,7 @@
                 <div class="inner">
                     <div class="box1 alt vcarBaner">
                         <div class="inner linkAriane">
-                            <a href="route('shared.voiture')">Nos Voiture</a>
+                            <a href="{{ route('shared.voiture') }}">Nos Voiture</a>
                             <span>></span>
                             <a class="currentLink" href="">Details Voiture</a>
                         </div>
@@ -142,7 +142,7 @@
     {{ $carData['description'] }}
 </div>
 <br id="{{ $carData['id'] }}">
-<div class="carBigImg">
+<div class="carBigImg" style="overflow: hidden;">
     <img src="/{{ $carData['image'] }}" alt="">
 </div>
 

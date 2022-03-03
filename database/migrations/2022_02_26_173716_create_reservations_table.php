@@ -15,8 +15,10 @@ return new class extends Migration
     {
         Schema::create('reservations', function (Blueprint $table) {
             $table->id();
-            $table->string("id_user");
-            $table->string("id_car");
+            $table->bigInteger('id_user')->nullable();
+            $table->foreign('id_user')->references('id')->on('users');
+            $table->bigInteger('id_car')->nullable();
+            $table->foreign('id_car')->references('id')->on('voitures');
             $table->date("date_start");
             $table->date("date_end");
             $table->boolean("active")->default(true);
