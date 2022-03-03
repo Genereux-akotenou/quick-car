@@ -6,6 +6,7 @@ The application is currently hosted on heroku and accessible via this [link](htt
 ## Some Interfaces
 <br>
 #### Home page
+
 <img src="IMAGE_APP/01-home.png" width="100%">
 #### Contact page
 <img src="IMAGE_APP/02-contact.png" width="100%">
